@@ -80,6 +80,58 @@ export const Home = () => {
         </motion.div>
       </section>
 
+      <section className={styles.ticker}>
+        <div className={styles.tickerTrack}>
+            <div className={styles.tickerContent}>
+            <span>React</span>
+            <span>✳</span>
+            <span>TypeScript</span>
+            <span>✳</span>
+            <span>JavaScript</span>
+            <span>✳</span>
+            <span>Node.js</span>
+            <span>✳</span>
+            <span>Express.js</span>
+            <span>✳</span>
+            <span>React</span>
+            <span>✳</span>
+            <span>TypeScript</span>
+            <span>✳</span>
+            <span>JavaScript</span>
+            <span>✳</span>
+            <span>Node.js</span>
+            <span>✳</span>
+            <span>Express.js</span>
+            <span>✳</span>
+            </div>
+        </div>
+
+        <div className={`${styles.tickerTrack} ${styles.reverse}`}>
+            <div className={styles.tickerContent}>
+            <span>MongoDB</span>
+            <span>✳</span>
+            <span>PostgreSQL</span>
+            <span>✳</span>
+            <span>Redux Toolkit</span>
+            <span>✳</span>
+            <span>Zustand</span>
+            <span>✳</span>
+            <span>Firebase</span>
+            <span>✳</span>
+            <span>MongoDB</span>
+            <span>✳</span>
+            <span>PostgreSQL</span>
+            <span>✳</span>
+            <span>Redux Toolkit</span>
+            <span>✳</span>
+            <span>Zustand</span>
+            <span>✳</span>
+            <span>Firebase</span>
+            <span>✳</span>
+            </div>
+        </div>
+        </section>
+
       <div className={styles.scrollIndicator}>
         <span></span>
         SCROLL TO EXPLORE

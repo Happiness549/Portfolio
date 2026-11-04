@@ -264,6 +264,61 @@
   }
 }
 
+/* Moving technology ticker */
+
+.ticker {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(66, 105, 77, 0.2);
+  border-bottom: 1px solid rgba(66, 105, 77, 0.2);
+  overflow: hidden;
+}
+
+.tickerTrack {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tickerContent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 12px 0;
+  flex-shrink: 0;
+  animation: tickerMove 25s linear infinite;
+}
+
+.tickerContent span {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tickerContent span:nth-child(even) {
+  color: var(--color-secondary);
+  font-size: 20px;
+}
+
+.reverse .tickerContent {
+  animation-direction: reverse;
+}
+
+.ticker:hover .tickerContent {
+  animation-play-state: paused;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 500px) {
   .home {
     padding: 55px 6% 30px;
