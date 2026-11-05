@@ -112,30 +112,36 @@ export const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
+      
           <p>
-            I'm a Full-Stack Developer with a passion for building
-            applications that solve problems and create meaningful
-            experiences for users.
+            I'm a Full-Stack Developer passionate about building
+            meaningful digital experiences and turning ideas into
+            practical solutions. I enjoy approaching challenges with
+            curiosity, creativity and a problem-solving mindset.
           </p>
 
           <p>
-            My development journey has given me practical experience
-            with the MERN stack, where I've worked with MongoDB,
-            Express.js, React and Node.js to build full-stack
-            applications.
+            My experience spans frontend and backend development,
+            working with technologies such as React, TypeScript,
+            JavaScript, Node.js, Express.js, MongoDB and PostgreSQL.
+            I enjoy building applications that combine thoughtful
+            design with functionality.
           </p>
 
           <p>
-            I'm currently expanding my skills through the FERN Stack
-            journey at CodeTribe, exploring Firebase while continuing
-            to strengthen my knowledge of modern web development.
+            Through my MERN Stack experience and current FERN Stack
+            journey at CodeTribe, I've developed a strong appreciation
+            for continuous learning, collaboration and building
+            solutions that address real-world needs.
           </p>
 
           <p>
-            I enjoy learning new technologies, understanding how
-            things work and challenging myself to become a better
-            developer with every project I build.
+            Beyond writing code, I'm someone who values growth,
+            embraces challenges and is always curious about what
+            I can create next. I'm excited to contribute my skills,
+            learn from others and grow through meaningful opportunities.
           </p>
+
         </motion.div>
       </section>
 
