@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mail, Code2, ArrowUpRight, Send } from "lucide-react";
+import { Phone } from "lucide-react";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
@@ -42,11 +43,20 @@ const Contact = () => {
           </p>
 
           <Link
-            to="mailto:YOUR_EMAIL@gmail.com"
+            to="mailto:mhlongohappiness880@gmail.com"
             className={styles.emailLink}
           >
             <Mail size={20} />
                mhlongohappiness880@gmail.com
+            <ArrowUpRight size={18} />
+          </Link> <br/>
+
+          <Link
+            to="tel:+27781678950"
+            className={styles.emailLink}
+          > 
+            <Phone size={20} />
+            +27 78 167 8950
             <ArrowUpRight size={18} />
           </Link>
 
