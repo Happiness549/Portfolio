@@ -14,16 +14,23 @@ export const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+         
           <span className={styles.greeting}>HELLO, I'M HAPPINESS</span>
 
-          <h1>Building digital<br />experiences with<span> purpose.</span></h1>
+          <h1>
+            Building digital<br />
+            experiences with<span> purpose.</span>
+          </h1>
 
           <p className={styles.description}>
-            I'm a Full-Stack Developer passionate about creating
-            beautiful, functional and user-friendly web applications.
-            I work with the MERN stack and am expanding my skills
-            through the FERN stack.
+            I'm a Full-Stack Developer passionate about turning ideas
+            into meaningful digital experiences. I build responsive,
+            user-friendly applications with React, TypeScript and
+            modern backend technologies. With practical MERN Stack
+            experience and my ongoing FERN Stack journey, I'm always
+            exploring new ways to solve problems through technology.
           </p>
+
 
           <div className={styles.stackTags}>
             <span>MERN STACK</span>
