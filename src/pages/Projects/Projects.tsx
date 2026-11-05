@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { Code2, ExternalLink } from "lucide-react";
 import styles from "./Project.module.css";
+import  hotelApp from '../../assets/hotelApp.png'
+import shoppingList from '../../assets/shoppingList.png'
+import recipeFinder from '../../assets/recipeFinder.png'
+import weatherApp from '../../assets/weatherApp.png'
+
 
 export const projects = [
   {
@@ -9,13 +14,13 @@ export const projects = [
     category: "Full-Stack Development",
     description:
       "A full-stack hotel booking platform where users can explore hotels, view available rooms and make reservations.",
+    image: hotelApp,
     technologies: [
       "React",
       "Express.js",
       "Redux Toolkit",
       "Tailwind CSS",
       "Neon PostgreSQL",
-      "Cloudinary",
     ],
     github:
       "https://github.com/Happiness549/Full-Stack-Hotel-App",
@@ -28,6 +33,7 @@ export const projects = [
     category: "Frontend Development",
     description:
       "A shopping list application that allows users to manage their shopping items with an interactive interface.",
+      image: shoppingList,
     technologies: [
       "React",
       "TypeScript",
@@ -46,6 +52,7 @@ export const projects = [
     category: "Frontend Development",
     description:
       "A weather application built with React, featuring a clean interface for displaying weather information.",
+      image: weatherApp,
     technologies: ["React", "TypeScript", "CSS"],
     github:
       "https://github.com/Happiness549/ReactTS-Weather-App",
@@ -58,6 +65,7 @@ export const projects = [
     category: "Frontend Development",
     description:
       "A recipe discovery application that helps users explore meals through an interactive interface.",
+      image: recipeFinder,
     technologies: ["React", "Zustand", "Tailwind CSS"],
     github:
       "https://github.com/Happiness549/ALX-FE-Capstone-Project",
@@ -103,7 +111,7 @@ export const Projects = () => {
               whileHover={{ y: -8 }}
             >
               <div className={styles.projectImage}>
-                <span>{project.title}</span>
+                  <img src={project.image} alt={project.title} />
                 {project.featured && (
                   <span className={styles.featuredLabel}>
                     FEATURED PROJECT
